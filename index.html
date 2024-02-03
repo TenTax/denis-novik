@@ -11,7 +11,7 @@
     <div class="app-section">
       <div class="app-container">
         <header class="header">
-          <nav class="navigation">
+          <nav class="navigation" id="navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
                 <a href="#home" class="navigation__link navigation__link_active">Home</a>
@@ -28,7 +28,17 @@
               <li class="navigation__item">
                 <a href="#contacts" class="navigation__link">Contacts</a>
               </li>
+              <li class="navigation__lang">
+                <div class="lang lang_large">
+                  <a href="/" class="lang__link">ru</a>
+                  <span>|</span>
+                  <a href="/" class="lang__link lang__link_active">eng</a>
+                </div>
+              </li>
             </ul>
+            <button class="navigation__burger burger burger_active" type="button" id="close-btn">
+              <span></span>
+            </button>
           </nav>
         </header>
       </div>
@@ -50,8 +60,14 @@
               <span>|</span>
               <a href="/" class="lang__link lang__link_active">eng</a>
             </div>
+            <button class="intro__burger burger" type="button" id="open-btn">
+              <span></span>
+            </button>
           </div>
-          <img src="images/hero.jpg" alt="Denis Novik" class="intro__image">
+          <picture class="intro__image">
+            <source srcset="images/hero-mobile.jpg" media="(max-width: 768px)">
+            <img src="images/hero.jpg" alt="Denis Novik" class="intro__image">
+          </picture>
         </div>
       </div>
     </section>
@@ -183,5 +199,6 @@
       </div>
     </section>
   </main>
+  <script src="js/script.js"></script>
 </body>
 </html>

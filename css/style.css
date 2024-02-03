@@ -43,6 +43,12 @@ html, body {
   line-height: normal;
 }
 
+.no-scroll {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .app-section {
   padding: 0 30px;
   width: 100%;
@@ -69,6 +75,7 @@ html, body {
 .app-button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   padding: 8px 30px;
   min-height: 42px;
   background-color: var(--color-black);
@@ -130,6 +137,45 @@ html, body {
   color: var(--color-black);
 }
 
+.burger {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 32px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger::before,
+.burger span,
+.burger::after {
+  display: block;
+  width: 100%;
+  height: 4px;
+  content: '';
+  background-color: var(--color-black);
+}
+
+.burger_active::before,
+.burger_active::after {
+  background-color: var(--color-gray);
+}
+
+.burger_active span {
+  transform: scale(0);
+}
+
+.burger_active::before {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger_active::after {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 .navigation {
   border-bottom: 1px solid var(--color-gray);
 }
@@ -144,6 +190,10 @@ html, body {
 
 .navigation__item {}
 
+.navigation__lang {
+  display: none;
+}
+
 .navigation__link {
   color: var(--color-gray);
   font-size: 18px;
@@ -155,6 +205,13 @@ html, body {
 .navigation__link_active,
 .navigation__link:hover {
   color: var(--color-black);
+}
+
+.navigation__burger {
+  position: absolute;
+  right: 30px;
+  top: 60px;
+  display: none;
 }
 
 .header {}
@@ -174,6 +231,10 @@ html, body {
   justify-content: center;
   gap: 4px;
   font-size: 16px;
+}
+
+.lang_large {
+  font-size: 32px;
 }
 
 .lang__link {
@@ -213,6 +274,7 @@ html, body {
 }
 
 .intro__content {
+  position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -232,6 +294,13 @@ html, body {
   width: 64px;
   height: 20px;
   transform: rotate(-90deg);
+}
+
+.intro__burger {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  display: none;
 }
 
 .intro__image {
@@ -369,4 +438,108 @@ html, body {
   text-align: center;
   font-size: 14px;
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .socials__list {
+    gap: 32px 50px;
+  }
+
+  .navigation {
+    position: fixed;
+    top: 0;
+    right: 100%;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    padding: 52px 30px 30px;
+    background-color: var(--color-white);
+    transform: translateX(0);
+    transition: transform 0.3s;
+  }
+
+  .navigation_active {
+    transform: translateX(100%);
+  }
+
+  .navigation__list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .navigation__lang {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    transform: rotate(90deg) translate(-102px, -12px);
+  }
+
+  .navigation__link {
+    font-size: 28px;
+  }
+
+  .navigation__burger {
+    display: flex;
+  }
+
+  .intro {
+    padding-bottom: 84px;
+  }
+
+  .intro__content {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 12px;
+  }
+
+  .intro__brand {
+    margin-bottom: 24px;
+  }
+
+  .intro__info {
+    margin-bottom: 6px;
+  }
+
+  .intro__lang {
+    display: none;
+  }
+
+  .intro__burger {
+    display: flex;
+  }
+
+  .about {
+    padding: 81px 0 76px;
+  }
+
+  .skills {
+    padding: 84px 0 100px;
+  }
+
+  .skills__title {
+    margin-bottom: 50px;
+  }
+
+  .skills__text {
+    margin-bottom: 70px;
+  }
+
+  .portfolio {
+    padding: 80px 0;
+  }
+
+  .portfolio__item-image {
+    margin-bottom: 32px;
+  }
+
+  .contacts {
+    padding: 82px 0 90px;
+  }
+
+  .contacts__button-wrapper {
+    flex-direction: column;
+    margin-bottom: 48px;
+  }
 }
