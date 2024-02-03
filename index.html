@@ -7,6 +7,181 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  hello world!
+  <main class="app">
+    <div class="app-section">
+      <div class="app-container">
+        <header class="header">
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#home" class="navigation__link navigation__link_active">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#about" class="navigation__link">About me</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#skills" class="navigation__link">Skills</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#portfolio" class="navigation__link">Portfolio</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#contacts" class="navigation__link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <section class="app-section">
+      <div class="app-container">
+        <div class="intro">
+          <div class="intro__content">
+            <a href="/" class="intro__brand brand">
+              <span>Denis</span>
+              <span>Novik</span>
+            </a>
+            <p class="intro__info">
+              UX | UI designer <br />
+              24 years old, Minsk
+            </p>
+            <div class="intro__lang lang">
+              <a href="/" class="lang__link">ru</a>
+              <span>|</span>
+              <a href="/" class="lang__link lang__link_active">eng</a>
+            </div>
+          </div>
+          <img src="images/hero.jpg" alt="Denis Novik" class="intro__image">
+        </div>
+      </div>
+    </section>
+    <section class="app-section app-section_gray">
+      <div class="app-container">
+        <div class="about">
+          <h2 class="about__title app-title">About me</h2>
+          <p class="about__text">
+            Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.
+          </p>
+          <p class="about__text">
+            I'm studying at courses "Web and mobile design interfaces" in IT-Academy.
+          </p>
+          <p class="about__text">
+            Ready to implement excellent projects with wonderful people.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="app-section">
+      <div class="app-container">
+        <div class="skills">
+          <h2 class="skills__title app-title">Skills</h2>
+          <p class="skills__text">
+            I work in such programs as
+          </p>
+          <ul class="skills__list">
+            <li class="skills__list-item">
+              <img src="icons/ps.svg" alt="photoshop" class="skills__list-image">
+              <p class="skills__list-name">Adobe Photoshop</p>
+              <div class="skills__rating app-rating">
+                <i class="app-rating__star app-rating__star_active"></i>
+                <i class="app-rating__star"></i>
+                <i class="app-rating__star"></i>
+                <i class="app-rating__star"></i>
+                <i class="app-rating__star"></i>
+              </div>
+            </li>
+            <li class="skills__list-item">
+              <img src="icons/ai.svg" alt="photoshop" class="skills__list-image">
+              <p class="skills__list-name">Adobe Illustrator</p>
+              <div class="skills__rating app-rating">
+                <i class="app-rating__star app-rating__star_active"></i>
+                <i class="app-rating__star"></i>
+                <i class="app-rating__star"></i>
+                <i class="app-rating__star"></i>
+                <i class="app-rating__star"></i>
+              </div>
+            </li>
+            <li class="skills__list-item">
+              <img src="icons/ae.svg" alt="photoshop" class="skills__list-image">
+              <p class="skills__list-name">Adobe After Effects</p>
+              <div class="skills__rating app-rating">
+                <i class="app-rating__star app-rating__star_active"></i>
+                <i class="app-rating__star"></i>
+                <i class="app-rating__star"></i>
+                <i class="app-rating__star"></i>
+                <i class="app-rating__star"></i>
+              </div>
+            </li>
+            <li class="skills__list-item">
+              <img src="icons/figma.svg" alt="photoshop" class="skills__list-image">
+              <p class="skills__list-name">Figma</p>
+              <div class="skills__rating app-rating">
+                <i class="app-rating__star app-rating__star_active"></i>
+                <i class="app-rating__star"></i>
+                <i class="app-rating__star"></i>
+                <i class="app-rating__star"></i>
+                <i class="app-rating__star"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="app-section app-section_gray">
+      <div class="app-container">
+        <div class="portfolio">
+          <h2 class="portfolio__title app-title">Portfolio</h2>
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <img src="images/woman.jpg" alt="Levi's" class="portfolio__item-image">
+              <a href="/" class="portfolio__item-link">Online fashion store - Homepage</a>
+            </li>
+            <li class="portfolio__item">
+              <img src="images/reebok.jpg" alt="Reebok" class="portfolio__item-image">
+              <a href="/" class="portfolio__item-link">Reebok Store - Concept</a>
+            </li>
+            <li class="portfolio__item">
+              <img src="images/braun.jpg" alt="Braun" class="portfolio__item-image">
+              <a href="/" class="portfolio__item-link">Braun Landing Page - Concept</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="app-section">
+      <div class="app-container">
+        <div class="contacts">
+          <h2 class="contacts__title app-title">Contacts</h2>
+          <p class="contacts__description">
+            <span>Want to know more or just chat?</span> <br>
+            <span>You are welcome!</span>
+          </p>
+          <div class="contacts__button-wrapper">
+            <button type="button" class="app-button">Send message</button>
+          </div>
+          <nav class="contacts__socials socials">
+            <ul class="socials__list">
+              <li class="socilas__item">
+                <a href="/" class="socials__link app-icon icon-linkedin"></a>
+              </li>
+              <li class="socilas__item">
+                <a href="/" class="socials__link app-icon icon-insta"></a>
+              </li>
+              <li class="socilas__item">
+                <a href="/" class="socials__link app-icon icon-behance"></a>
+              </li>
+              <li class="socilas__item">
+                <a href="/" class="socials__link app-icon icon-dribble"></a>
+              </li>
+            </ul>
+          </nav>
+          <p class="contacts__text">
+            <span>Like me on</span><br>
+            <span>LinkedIn, Instagram, Behance, Dribble</span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
