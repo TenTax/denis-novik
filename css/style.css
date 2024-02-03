@@ -41,6 +41,7 @@ html, body {
   font-style: normal;
   color: var(--color-black);
   line-height: normal;
+  scroll-behavior: smooth;
 }
 
 .no-scroll {
@@ -184,11 +185,9 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 88px;
+  height: 88px;
   list-style: none;
 }
-
-.navigation__item {}
 
 .navigation__lang {
   display: none;
@@ -213,8 +212,6 @@ html, body {
   top: 60px;
   display: none;
 }
-
-.header {}
 
 .brand {
   display: inline-flex;
@@ -250,10 +247,6 @@ html, body {
   color: var(--color-black);
 }
 
-.socials {
-
-}
-
 .socials__list {
   display: flex;
   align-items: center;
@@ -280,8 +273,6 @@ html, body {
   justify-content: space-between;
   margin-bottom: 30px;
 }
-
-.intro__brand {}
 
 .intro__info {
   margin-bottom: 12px;
@@ -438,6 +429,31 @@ html, body {
   text-align: center;
   font-size: 14px;
   font-weight: 500;
+}
+
+@media (min-width: 769px) {
+  .header-wrapper_sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    box-shadow: 0 0 10px var(--color-light-gray);
+    transform: translateY(0);
+    transition: transform 0.3s;
+  }
+
+  .header-wrapper_sticky .navigation {
+    border-bottom: none;
+  }
+
+  .header-wrapper_sticky .navigation__list {
+    height: 48px;
+  }
+
+  .header-wrapper_sticky + .app-section {
+    margin-top: 88px;
+  }
 }
 
 @media (max-width: 768px) {
