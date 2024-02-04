@@ -23,7 +23,7 @@ const sticky = () => {
   const header = document.querySelector('#header')
 
   const onScroll = () => {
-    if (document.documentElement.scrollTop > 200) {
+    if (document.documentElement.scrollTop > 90) {
       header.classList.add('header-wrapper_sticky')
     } else {
       header.classList.remove('header-wrapper_sticky')
