@@ -1,4 +1,4 @@
-# Учебный лендинг denis-novik
+# Denis Novik
 
 ### Используемые технологии
 
@@ -6,7 +6,7 @@
 
 ### Описание
 
-Верстка лендинга по макету. [Ссылка](https://www.figma.com/file/5D9pDuLtS042hzaoN69Kd7/Free--Landing--Page-Template?type=design&node-id=0-1&mode=design&t=TbisMrIMCYvZTRh3-0) на макет в фигме.
+Верстка учебного лендинга по макету. [Ссылка](https://www.figma.com/file/5D9pDuLtS042hzaoN69Kd7/Free--Landing--Page-Template?type=design&node-id=0-1&mode=design&t=TbisMrIMCYvZTRh3-0) на макет в фигме.
 
 ### Запуск
 
